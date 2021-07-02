@@ -1,3 +1,4 @@
 
-/yelp_dataset
-/covid_19_dataset
+/yelp_dataset.tar
+/covid_19_dataset.tar
+/*.json
