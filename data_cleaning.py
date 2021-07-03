@@ -9,23 +9,17 @@ import pandas as pd
 
 # Cleaning der Daten
 
-test = pd.read_csv(r"E:\Projekte\Yelp_Analyser\vancouver_yelp_stores.csv")
+df = pd.read_csv(r"E:\Projekte\Yelp_Analyser\vancouver_yelp_stores.csv")
 
-test.columns
+# Fixen der Nan Values in sinnvolle Werte
 
-test["stars"].value_counts()
-test["stars"].mean()
-test["stars"].median()
-test["stars"].mode()
-test["stars"].isna().sum()
+df["address"] = df["address"].fillna("")
+df["categories"] = df["categories"].fillna("")
+df["postal_code"] = df["postal_code"].fillna("")
+df["attributes"] = df["attributes"].fillna("{}")
+df["hours"] = df["hours"].fillna("{}")
 
 
-test["review_count"].value_counts()
-test["review_count"].mean()
-test["review_count"].median()
-test["review_count"].mode()
-test["review_count"].isna().sum()
-
-test["review_count"].where(test["stars"] == 5.0,).groupby(test["review_count"]).transform('max')
-
-test.describe()
+# Entpacken der verschachelten Jsons (Nans müssen gefüllt sein zum klappen)
+test2 = pd.json_normalize(df["attributes"].apply(lambda x: eval(x)))
+#df = pd.concat([df, pd.json_normalize(df["attributes"].apply(lambda x: eval(x)))], axis=1)
