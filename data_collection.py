@@ -9,7 +9,7 @@ import pandas as pd
 
 # Einlesen der Yelp Datenbank
 
-path = "E:\Projekte\Yelp_Analyser\yelp_academic_dataset_business.json"
+path = "\\yelp_academic_dataset_business.json"
 
 data = pd.read_json(path, lines=True)
 
@@ -18,8 +18,6 @@ data = pd.read_json(path, lines=True)
 
 data_vancouver = data[data["city"].str.lower() == "vancouver"]
 
-# Cleaning der Daten
+# Speichern als CSV
 
-# data_vancouver.to_csv("vancouver_yelp_stores.csv", index = False)
-
-# test = pd.read_csv("vancouver_yelp_stores.csv")
+data_vancouver.to_csv("vancouver_yelp_stores.csv", index = False)
