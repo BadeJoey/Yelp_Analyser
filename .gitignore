@@ -1,4 +1,4 @@
 
-/yelp_dataset.tar
-/covid_19_dataset.tar
+/*.tar
 /*.json
+.ipynb_checkpoints
