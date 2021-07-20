@@ -36,3 +36,4 @@ df.apply(lambda x: ((x["stars"] * x["review_count"]) + 1.0 + 2.0 + 3.0 + 4.0 + 5
 
 # EDA Exploratory Data Analysis
 It became clear through exploration there was still some cleaning to do in the EDA itself. We also created some dummy variables out of the categories of food the restaurants sells. Some of the categories where grouped like `'Japanese|SushiBars|Ramen'` all under japanese. The opening times on weekdays and weekend where also calculated for each restaurant given opening hours where provided.
+<br/>
