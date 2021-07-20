@@ -1,3 +1,4 @@
+![In Progress](https://badgen.net/badge/status/in-progress/yellow)
 #### Links
 - [Introduction](#introduction)
   - [English Version](#english)
@@ -35,17 +36,21 @@ df.apply(lambda x: ((x["stars"] * x["review_count"]) + 1.0 + 2.0 + 3.0 + 4.0 + 5
 ```
 
 # EDA Exploratory Data Analysis
-It became clear through exploration there was still some cleaning to do in the EDA itself. We also created some dummy variables out of the categories of food the restaurants sells. Some of the categories where grouped like `'Japanese|SushiBars|Ramen'` all under japanese. The opening times on weekdays and weekend where also calculated for each restaurant given opening hours where provided.
+It became clear through exploration there was still some cleaning to do in the EDA itself. We also created some dummy variables out of the categories of food the restaurants sells. Some categories were grouped like `'Japanese|SushiBars|Ramen'` all under Japanese. The opening times on weekdays and weekend were also calculated for each restaurant, given opening hours were provided.
 <br/>
 <br/>
-Before we look at the Heat Map we can see the `Pandas.describe()` of the numerical values.
+Before we look at the Heat Map, we can see the `Pandas.describe()` of the numerical values.
+<br/>
 <br/>
 ![Describe](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/describe.JPG)
+<br/>
 <br/>
 Heat Map:<br/>
 ![Heat Map](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/heatmap.JPG)
 <br/>
-It shows a correlation between weekday hours and weekend hours, which is not suprising to think a restaurant that is long open during the weekdays will also be during the weekend. There also seems to be a weaker correlation between price range and review counts. We can see in this Pivot Table that especially the price range of 3 (which is more luxerious but still affordable) gets a lot of reviews.
+<br/>
+It shows a correlation between weekday hours and weekend hours, which is not surprising to think a restaurant that is long open during the weekdays will also be during the weekend. There also seems to be a weaker correlation between price range and review counts. We can see in this Pivot Table that especially the price range of 3 (which is more luxurious but still affordable) gets a lot of reviews.
+<br/>
 <br/>
 ![Price Range Box](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/price_range_box.JPG)
 ![Price Range - Review Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/price_review.JPG)
@@ -53,7 +58,8 @@ It shows a correlation between weekday hours and weekend hours, which is not sup
 
 ---
 
-Restaurants that have alcohol on the menu also show to get more reviews. It doesnt seem to effect the stars that are given.
+Restaurants that have alcohol on the menu also show to get more reviews. It doesn't seem to affect the stars that are given.
+<br/>
 <br/>
 ![Alcohol Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/alc_count.JPG)
 ![Alcohol Stars](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/alc_stars.JPG)
@@ -62,6 +68,7 @@ Restaurants that have alcohol on the menu also show to get more reviews. It does
 
 ---
 
-Fast food restaurants have on average less stars than non fast food restaurants and they also get less reviews.
+Fast food restaurants have on average less stars than non-fast food restaurants. They also get less reviews.
+<br/>
 <br/>
 ![Alcohol Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/alc_count.JPG)
