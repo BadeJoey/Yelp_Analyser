@@ -67,7 +67,7 @@ We see that the __mean of reviews__ is __not__ heavy dependent on the postal cod
 <br/>
 ![Map Review](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/map_review.JPG)
 
-###Stars and Price
+### Stars and Price
 Star, Fair Stars and Price Range all seem to be __normally distributed with a negativ skew__.
 <br/>
 <br/>
