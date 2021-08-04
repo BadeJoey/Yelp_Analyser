@@ -47,16 +47,16 @@ Before we start, let's look at `Pandas.describe()` of the numerical values.
 
 ## Basic Analysis
 ### Number of Restaurants
-First let's see where most restaurants are in Vancouver.
+First, let's see where most restaurants are in Vancouver.
 <br/>
 <br/>
 ![Map Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/map_count.JPG)
 <br/>
 <br/>
-We can see that the __West End__ and especially __Downtown__ have the highest number of restaurants. This fits with the reputation of this neigborhoods since Downtown is famous for its __buzzing nightlife and restaurant scene__.
+We can see that the __West End__ and especially __Downtown__ have the highest number of restaurants. This fits with the reputation of these neighborhoods, since Downtown is famous for its __buzzing nightlife and restaurant scene__.
 
 ### Review Counts
-The review distrubtion has a tail that goes to the __max value of 2302 reviews__. Its important to point out that we have a log scale for the y-axis so the curve is much steeper in a normal scale.
+The review distribution has a tail that goes to the __max value of 2302 reviews__. It's important to point out that we have a log scale for the y-axis, so the curve is much steeper in a normal scale.
 <br/>
 <br/>
 ![Review Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/review_count.JPG)
@@ -68,25 +68,25 @@ We see that the __mean of reviews__ is __not__ heavy dependent on the postal cod
 ![Map Review](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/map_review.JPG)
 
 ### Stars and Price
-Star, Fair Stars and Price Range all seem to be __normally distributed with a negativ skew__.
+Star, Fair Stars and Price Range all seem to be __normally distributed with a negative skew__.
 <br/>
 <br/>
 ![Stars and Price Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/star_fair_price.JPG)
 <br/>
 <br/>
-The Map also shows an even distribution. The __Downtime Eastside__ shows a little __higher mean__. This semms to be connected to the Japanese Restaurants in the Area which has higher ratings as we will later see.
+The Map also shows an even distribution. The __Downtime Eastside__ shows a little __higher mean__. This seems to be connected to the Japanese Restaurants in the Area which has higher ratings, as we will later see.
 <br/>
 <br/>
 ![Map Star](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/map_star.JPG)
 <br/>
 <br/>
-Also the Price seems to even out over all the Areas.
+Also, the Price seems to even out over all the Areas.
 <br/>
 <br/>
 ![Map Price](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/map_price.JPG)
 <br/>
 <br/>
-Here another visualitation of boxplots for reviews, stars, fair stars and price range. 
+Here is another visualization of box plots for reviews, stars, fair stars and price range.
 <br/>
 <br/>
 ![Stars Review Price](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/star_fair_price_review.JPG)
@@ -102,13 +102,13 @@ The strongest correlation is shown between weekday hours and weekend hours, whic
 <br/>
 ![Weekday Weekend Correlation](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/week_end_corr.JPG)
 <br/>
-There also seems to be a correlation between price range/review counts and star/review counts. We can see this more clearly in the following graphes.
+There also seems to be a correlation between price range/review counts and star/review counts. We can see this more clearly in the following graphs.
 
 ### Does a higher price or better ratings give you more reviews?
 ![Price Range - Review](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/review_price_corr.JPG)
 <br/>
 <br/>
-The price range of the restaurants does affect the review count strongly. It peaks at the price range of 3 the second highest in Yelp. The reason for this could be that these restaurants are still afforadable for working class people or maybe with the expactation that comes with the price.
+The price range of the restaurants does affect the review count strongly. It peaks at the price range of 3 the second highest in Yelp. The reason for this could be that these restaurants are still affordable for working class people, or maybe with the expectation that comes with the price.
 <br/>
 <br/>
 ![Stars - Review Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/review_star_corr.JPG)
@@ -122,8 +122,8 @@ The same can be said for stars. They also peak at the second-highest value of 4-
 <br/>
 Combining these 3 together, we can see that the highest review count can be achieved with price rating of 3 and current stars of 4.5. So your restaurant should be exclusive but not luxurious and the higher your ratings the better.
 
-### Higher Price better Ratings?
-The Heat Map shows no Correlation between price and stars. But if we look closer at these two together, it shows that with higher price, you at least narrow down your ratings to a higher median and mean. You won't be scored 2-stars in total, but you are also missing out on the 5-star perfect rating, which likely comes from high expectations with this kind of price tag.
+### Higher Price = better Ratings?
+The Heat Map shows no correlation between price and stars. But if we look closer at these two together, it shows that with higher price, you at least narrow down your ratings to a higher median and mean. You won't be scored 2-stars in total, but you are also missing out on the 5-star perfect rating, which likely comes from high expectations with this kind of price tag.
 <br/>
 <br/>
 ![Price with Stars](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/stars_price.JPG)
@@ -142,22 +142,22 @@ Restaurants that have alcohol on the menu doesn't show to get better ratings, bu
 Restaurants can be part of multiple categories, for example Japanese, Bar, Breakfast and Sandwiches. Restaurants decide themselves which categories they count to.
 
 ### Sum of Categories
-Let's look at the biggist sum of categories. Here we see it's Bars and second Coffee & Tea. The first Cuisine is Japanese and second Italien.
+Let's look at the biggest sum of categories. Here we see it's Bars and second Coffee & Tea. The first Cuisine is Japanese and second Italian.
 <br/>
 <br/>
 ![Categories Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/cat_count.JPG)
 <br/>
 <br/>
-If we look at the highest number of restaurants per postal area a new category of chinese restaurants emerges with Bars still at the top
+If we look at the highest number of restaurants per postal area, a new category of Chinese restaurants emerges with Bars still at the top.
 <br/>
 <br/>
 ![Categories Count per postal](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/kind_res_by_postal.JPG)
 <br/>
 <br/>
-If we only display Cuisines Japanese takes the first Place again with chinese unchanged on place two.
+If we only display cuisines, Japanese takes the first place again, with Chinese unchanged on place two.
 <br/>
 <br/>
-![Categories Count per postal](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/kind_cuisine_res_by_postal.JPG)
+![Categories Count per postal](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/kind_cuisine_by_postal.JPG)
 
 ### Does a specific category give you better stars?
 No category gives a benefit. At the top are the categories vegetarian and vegan, maybe they are not so cruel in giving ratings or maybe the food is just better. Even though there is no category that gives a benefit there is one that give a clear disadvantage which is fast food and maybe not surprising they have low stars.
@@ -171,7 +171,7 @@ Fast food restaurants have on average less stars than non-fast food restaurants.
 <br/>
 ![Fast Food](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/fast_food.JPG)
 
-### Which specific category is the most expensiv?
+### Which specific category is the most expensive?
 The most expensive are Steakhouses and Japanese, which are both know for high quality food. The other side of the table shows fast food as cheapest food.
 <br/>
 <br/>
@@ -183,7 +183,7 @@ Using what we know about the relation of stars and price, we will look closely a
 <br/>
 ![French Price](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/french_price.JPG)
 
-### Which specific category get's the most reviews?
+### Which specific category gets the most reviews?
 Using what we know about the relation of reviews and price, we should see that Steakhouses and French come out on top and fast food as last. Checking our Graph, it is exactly how we expect. We should critically question if Steakhouses and French Cuisine, which are very popular, are not the driver of the correlation between reviews and price range since these two kinds of food are inherently more expensive.
 <br/>
 <br/>
