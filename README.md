@@ -128,10 +128,9 @@ The Heat Map shows no Correlation between price and stars. But if we look closer
 <br/>
 ![Price with Stars](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/stars_price.JPG)
 
+### Do drunk people give better ratings?
 
----
-
-Restaurants that have alcohol on the menu also show to get more reviews. It doesn't seem to affect the stars that are given.
+Restaurants that have alcohol on the menu doesn't show to get better ratings, but they do show to get more reviews. This can be connected to the big nightlife scene in Vancouver.
 <br/>
 <br/>
 ![Alcohol Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/alc_count.JPG)
@@ -139,9 +138,53 @@ Restaurants that have alcohol on the menu also show to get more reviews. It does
 ![Alcohol Categories](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/alc_cat.JPG)
 <br/>
 
----
+## Categories of Restaurants
+Restaurants can be part of multiple categories, for example Japanese, Bar, Breakfast and Sandwiches. Restaurants decide themselves which categories they count to.
 
+### Sum of Categories
+Let's look at the biggist sum of categories. Here we see it's Bars and second Coffee & Tea. The first Cuisine is Japanese and second Italien.
+<br/>
+<br/>
+![Categories Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/cat_count.JPG)
+<br/>
+<br/>
+If we look at the highest number of restaurants per postal area a new category of chinese restaurants emerges with Bars still at the top
+<br/>
+<br/>
+![Categories Count per postal](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/kind_res_by_postal.JPG)
+<br/>
+<br/>
+If we only display Cuisines Japanese takes the first Place again with chinese unchanged on place two.
+<br/>
+<br/>
+![Categories Count per postal](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/kind_cuisine_res_by_postal.JPG)
+
+### Does a specific category give you better stars?
+No category gives a benefit. At the top are the categories vegetarian and vegan, maybe they are not so cruel in giving ratings or maybe the food is just better. Even though there is no category that gives a benefit there is one that give a clear disadvantage which is fast food and maybe not surprising they have low stars.
+<br/>
+<br/>
+![Categories Star](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/cat_stars.JPG)
+<br/>
+<br/>
 Fast food restaurants have on average less stars than non-fast food restaurants. They also get less reviews.
 <br/>
 <br/>
-![Alcohol Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/alc_count.JPG)
+![Fast Food](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/fast_food.JPG)
+
+### Which specific category is the most expensiv?
+The most expensive are Steakhouses and Japanese, which are both know for high quality food. The other side of the table shows fast food as cheapest food.
+<br/>
+<br/>
+![Cat Price](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/cat_price.JPG)
+<br/>
+<br/>
+Using what we know about the relation of stars and price, we will look closely at that relation in regard to being a French or Non-French restaurant. We can see that French restaurants are slightly rising with their price rating. Also, French restaurants seem to outperform Non-French restaurant on average.
+<br/>
+<br/>
+![French Price](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/french_price.JPG)
+
+### Which specific category get's the most reviews?
+Using what we know about the relation of reviews and price, we should see that Steakhouses and French come out on top and fast food as last. Checking our Graph, it is exactly how we expect. We should critically question if Steakhouses and French Cuisine, which are very popular, are not the driver of the correlation between reviews and price range since these two kinds of food are inherently more expensive.
+<br/>
+<br/>
+![Cat Review](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/cat_review.JPG)
