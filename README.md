@@ -91,20 +91,43 @@ Here another visualitation of boxplots for reviews, stars, fair stars and price 
 <br/>
 ![Stars Review Price](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/star_fair_price_review.JPG)
 
-Heat Map:<br/>
-![Heat Map](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/heatmap.JPG)
+## Correlation
+
+### Heat Map
+![Heat Map](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/with_population_corr.JPG)
 <br/>
 <br/>
-It shows a correlation between weekday hours and weekend hours, which is not surprising to think a restaurant that is long open during the weekdays will also be during the weekend. 
+The strongest correlation is shown between weekday hours and weekend hours, which is not surprising to think a restaurant that is long open during the weekdays will also be during the weekend.
+<br/>
 <br/>
 ![Weekday Weekend Correlation](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/week_end_corr.JPG)
 <br/>
-There also seems to be a weaker correlation between price range and review counts. We can see in this Pivot Table that especially the price range of 3 (which is more luxurious but still affordable) gets a lot of reviews.
+There also seems to be a correlation between price range/review counts and star/review counts. We can see this more clearly in the following graphes.
+
+### Does a higher price or better ratings give you more reviews?
+![Price Range - Review](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/review_price_corr.JPG)
 <br/>
 <br/>
-![Price Range Box](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/price_range_box.JPG)
-![Price Range - Review Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/price_review.JPG)
+The price range of the restaurants does affect the review count strongly. It peaks at the price range of 3 the second highest in Yelp. The reason for this could be that these restaurants are still afforadable for working class people or maybe with the expactation that comes with the price.
 <br/>
+<br/>
+![Stars - Review Count](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/review_star_corr.JPG)
+<br/>
+<br/>
+The same can be said for stars. They also peak at the second-highest value of 4-stars, but then fall stronger at 5 stars. A 4-star rating could also be achieved though a combination of 3- and 5-star reviews also our graphs before showed that the median of stars given is 4, which would explain the more ratings. Were, 5-Star ratings can only be achieved when all people rate with 5-stars, which is unlikely.
+<br/>
+<br/>
+![All together - Price - Stars - Review](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/stars_price_review.JPG)
+<br/>
+<br/>
+Combining these 3 together, we can see that the highest review count can be achieved with price rating of 3 and current stars of 4.5. So your restaurant should be exclusive but not luxurious and the higher your ratings the better.
+
+### Higher Price better Ratings?
+The Heat Map shows no Correlation between price and stars. But if we look closer at these two together, it shows that with higher price, you at least narrow down your ratings to a higher median and mean. You won't be scored 2-stars in total, but you are also missing out on the 5-star perfect rating, which likely comes from high expectations with this kind of price tag.
+<br/>
+<br/>
+![Price with Stars](https://github.com/BadeJoey/Yelp_Analyser/blob/master/Images/stars_price.JPG)
+
 
 ---
 
