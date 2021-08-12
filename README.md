@@ -10,6 +10,15 @@
 # Yelp Analyser
 
 ## Introduction
+
+### Used Packages
+- Pandas
+- Matplotlib
+- Seaborn
+- Folium
+- Re
+- JSON
+
 ### English
 This Project explores the public [Yelp Dataset](https://www.yelp.com/dataset). It collects the data from the dataset and cleans it. The data will be filtered to only show stores in Vancouver, Canada. Furthermore, we look at restaurants in Vancouver and explore some interesting dependencies between the variables.
 
