@@ -39,7 +39,8 @@ df = pd.concat([df,
 # Eine 5er Bewertung führt zu 5 Sternen ingesamt was ingesamt besser ist als
 # ein Restaurant mit 100 5er Bewertung und 1 4er Bewertung. Daher nehmen wir
 # an das jedes Geschäft jede Wertung von 1-5 einmal erhalten hat für einen
-# faireren Mittelwert
+# faireren Mittelwert. Diese Herangehensweise basiert auf der 
+# Laplace's Rule of Succession
 
 # Alle Wertungen werden einmal hinzugefügt und dann geteilt durch die Anzahl 
 # + die 5 neuen Wertungen
